@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.stopwatch {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 12px 24px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 25px;
+    color: #282c34;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #21a1f1;
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#savedIntervals {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+#savedIntervals p {
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+#savedIntervals p:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}

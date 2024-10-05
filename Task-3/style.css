@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.player-setup {
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    background-color: #61dafb;
+    border: 2px solid #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #61dafb;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4fa2d4;
+    transform: scale(1.05);
+}
+
+.win {
+    animation: win-animation 1s ease-in-out forwards;
+}
+
+@keyframes win-animation {
+    0% { background-color: #61dafb; }
+    50% { background-color: #4fa2d4; }
+    100% { background-color: #61dafb; transform: scale(1.2); }
+}
+
+#winnerAnnouncement {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #ffcc00;
+    animation: winner-animation 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes winner-animation {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}

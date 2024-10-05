@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#location-input {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    transition: background 1s ease;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#location-input {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Weather Animations */
+.clear-sky {
+    background: linear-gradient(to top, #2193b0, #6dd5ed);
+    animation: clearSky 5s infinite;
+}
+
+@keyframes clearSky {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.cloudy {
+    background: linear-gradient(to top, #d7d2cc, #304352);
+    animation: cloudy 5s infinite;
+}
+
+@keyframes cloudy {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.rain {
+    background: linear-gradient(to top, #005c97, #363795);
+    animation: rain 5s infinite;
+}
+
+@keyframes rain {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.snow {
+    background: linear-gradient(to top, #e6e9f0, #eef2f3);
+    animation: snow 5s infinite;
+}
+
+@keyframes snow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Thunderstorm Background */
+.thunderstorm {
+    background: linear-gradient(to top, #141e30, #243b55);
+    animation: thunderstorm 5s infinite;
+}
+
+@keyframes thunderstorm {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    transition: background 1s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#location-input {
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weather-result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Weather Conditions Backgrounds */
+.clear-sky {
+    background-image: url('images/clearsky.jpg');
+}
+
+.cloudy {
+    background-image: url('images/cloudysky.jpg');
+}
+
+.rain {
+    background-image: url('images/rain.jpg');
+}
+
+.snow {
+    background-image: url('images/snow.jpg');
+}
+
+.thunderstorm {
+    background-image: url('images/thunderstorm.jpg');
+}
+
+.fog {
+    background-image: url('images/fog.jpg');
+}
